@@ -1,0 +1,335 @@
+/* BODY */
+body{
+    background-color: #cdcdcd !important;
+    height: 100%;
+}
+body, div,h1,li,ul{
+	margin: 0 auto;
+	padding: 0 auto;
+}
+
+/* EL MENÚ*/
+#logo{
+	position: absolute;
+	height: 100px;
+	width: 190px;
+	z-index: 5;
+}
+a{
+	text-decoration:none;
+}
+li{
+	list-style-type:none;
+}
+.menubar{
+	background-color:#A5C1FE;
+	
+	position: relative;
+	height: 90px;
+	width: 100%;
+	margin: 0 auto;
+	z-index: 6;
+	
+}
+.menubar>ul{
+	padding: 0;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 50px;
+	width: 60%;
+	margin: auto;
+	z-index: 1;
+	
+}
+.menubar>ul>li{
+	display: inline-block;
+	padding:10px 15px 10px 15px;
+	
+}
+.menubar>ul>li>a{
+	font-size:18px;
+	color:#fff;
+	
+}
+.home{
+	background-color:#7096EA;
+}
+
+.submenu1{
+	position:absolute;
+	background-color:#1E394F;
+	border-bottom:solid #7096EA 5px;
+	display:none;
+	z-index: 10000;
+}
+
+.menuUsuario{
+    position: absolute;
+    top: .4em;
+    right: 0;
+    width: 150px;
+    z-index: 1000000000;
+}
+
+.menu2{
+	position:relative;
+	background-color:#1E394F;
+	border-bottom:solid #7096EA 5px;
+}
+
+
+.tipocoches{
+	z-index: 1000;
+	background: #7096EA;
+}
+.registred{
+	z-index: 1000;
+	background: #7096EA;
+}
+.contacts{
+	z-index: 1000;
+	background: #7096EA;
+}
+
+.tipocoches>a {
+	z-index: 1;
+}
+.menubar>ul>li:hover>.submenu1{
+	display:block;
+}
+.service:hover>.submenu2{
+	display:block;
+}
+.submenu1>li{
+	padding:5px 10px 5px 10px;
+}
+.submenu1>li:hover{
+	display: block;
+	background-color:#5D7B93;
+	border-left:solid #7096EA 5px;
+}
+.submenu1>li>a{
+	color:#fff;
+}
+
+
+/*DIV BUSCADOR*/
+#buscador{
+	position: absolute;
+	height: 15px;
+	display: inline-block;
+}
+
+#buscador > input {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	height: 20px;
+	margin: auto 0;
+	
+}
+
+/*DIVS ARTICULOS*/
+
+.articulos{
+    background-color:white !important;
+    border: 0.5px solid white;
+    border-radius: 5px;
+    width: 90%;
+	margin-top: 5%;
+	text-align: center;
+    max-height: 90%;
+    position:relative;
+    
+}
+.articulos .articulo{
+	width: 19%;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 2% 2% 2% 2%;
+    padding: 2% 0;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.articulos .articulo img{
+	max-height: 50% !important;
+	max-width: 90% !important;
+	
+}
+
+/* FORMS DE REGISTRO, INICIO SESIÓN Y CONFIGURACIÓN  */
+
+.registrarse{
+    padding:2px;
+    cursor:pointer;
+    display:block;
+    width:30%;
+    margin: 0 auto;
+    text-align:left;
+    background-color:white !important;
+    border: 0.5px solid white;
+    border-radius: 10px;
+    margin-top: 10%;
+    
+}
+.registrarse article{
+    margin: 1% 10% 0 30%;
+    font-weight: bold;
+}
+.tenercuenta{
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 10px;    
+    background-color:white !important;
+    border: 0.5px solid white; 
+    border-radius: 10px;
+    width: 30%;
+    height: 50%;
+    margin-bottom: 10%;
+    cursor:pointer;
+
+}
+.iniciosesion{
+    padding:2px;
+    cursor:pointer;
+    display:block;
+    width:30%;
+    margin: 0 auto;
+    text-align:left;
+    background-color:white !important;
+    border: 0.5px solid white;
+    border-radius: 10px;
+    margin-top: 10%;
+    margin-bottom: 15%;
+}
+.iniciosesion article{
+    margin: 2% 0;
+    
+    font-weight: bold;
+}
+.iniciosesion {
+    text-align: center;
+    padding: 1em;
+}
+.iniciosesion input[type=text]{
+    margin-bottom: 1em
+}
+
+
+.iniciosesion .botoninicio{
+    margin: 0;
+}
+
+.recogerPedido{
+    width: 90%;
+}
+
+.recogerPedido .articuloCarrito{
+    display: inline-block;
+    width: 20%;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 2% 2% 2% 2%;
+    padding: 2%;
+    display: inline-block;
+    vertical-align: top;
+}
+.recogerPedido .articuloCarrito img{
+    margin: 0 auto;
+    width: 90%;
+}
+
+.configuracion, .recogerPedido, .domicilioPedido{
+    display: inline-block;
+    padding:1em;
+    cursor:pointer;
+    display:block;
+    width:30%;
+    margin: 0 auto;
+    text-align:left;
+    background-color:white !important;
+    border: 0.5px solid white;
+    border-radius: 10px;
+    margin-top: 10%;
+    margin-bottom: 15%;
+}
+
+.recogerPedido{
+     margin-top: 5%; 
+    margin-left: 10%;
+    margin-right: 2%;
+}
+
+
+.domicilioPedido{
+     margin-top: 5%; 
+    margin-right: 8%;
+}
+.eliminarcuenta {
+    padding:2px;
+    cursor:pointer;
+    display:block;
+    width:50%;
+    margin: 0 auto;
+    text-align:left;
+    background-color:white !important;
+    border: 0.5px solid white;
+    border-radius: 10px;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+/* metodos de recogida */
+
+
+.recogerPedido, .domicilioPedido {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center
+}
+
+
+.recogerPedido .botonRecoger{
+    display: block;
+    margin-top: 2%;
+}
+
+/* FOOTER */
+.futer{
+    background-color: rgba(30,30,30,0.9);
+    height: 5%;
+    width: 100%;
+
+}
+
+.futer .contenidofooter{
+    text-align: center;
+}
+
+.futer h4{
+    color: white;
+}
+.futer article{
+    color: white;
+}
+
+.futer img{
+    max-height: 40px;
+    width: 40px;
+}
+
+.detalles, .carrito {
+    width: 90%;
+    margin-bottom: .5em;
+    padding: .5em 0;
+    border: 0;
+    background: #333;
+    color: white;
+    
+}
